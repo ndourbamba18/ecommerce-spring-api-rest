@@ -2,27 +2,27 @@
 
 ## Backend Authentication
 
-> [Spring Boot + JWT Authentication](https://bezkoder.com/spring-boot-vue-js-authentication-jwt-spring-security/)
+> [Spring Boot + JWT Authentication + MySQL](https://github.com/ndourbamba18/user-registration-jwt-api-rest)
 
 ## Backend CRUD App
 
-> [Spring Boot + MySQL/PostgreSQL example](https://bezkoder.com/spring-boot-vue-js-crud-example/)
+> [Spring Boot + MySQL](https://github.com/ndourbamba18/company-service)
 
-> [Spring Boot + MySQL example](https://bezkoder.com/angular-spring-boot-crud/)
+> [Spring Boot + Spring MVC + MySQL ](https://github.com/ndourbamba18/spring-boot-mvc-employee-manager)
 
-> [Spring Boot + PostgreSQL example](https://bezkoder.com/angular-spring-boot-postgresql/)
+> [Spring Boot + Java Mail Sender](https://github.com/ndourbamba18/contact-form)
 
-> [Spring Boot + MySQL example](https://bezkoder.com/angular-10-spring-boot-crud/)
+> [Spring Boot + MySQL](https://github.com/ndourbamba18/training-rest-api)
 
 ## Microservices:
-> [Spring Boot + MySQL + Rest Client](https://bezkoder.com/integrate-angular-spring-boot/)
+> [Spring Boot + MySQL + Rest Template](https://github.com/ndourbamba18/Microservices)
  
-> [Spring Boot + MySQL + Open Feign](https://bezkoder.com/integrate-angular-spring-boot/)
+> [Spring Boot + MySQL + Open Feign](https://github.com/ndourbamba18/SpringBoot-Microservices-Using-FeignClients)
 
-> [Spring Boot + MySQL + Rest Client](https://bezkoder.com/integrate-angular-spring-boot/)
+> [Spring Boot + MySQL + Rest Template](https://github.com/ndourbamba18/spring-boot-rest-template)
 
 More Practice:
-> [Spring Boot File upload example with Multipart File](https://bezkoder.com/spring-boot-file-upload/)
+> [Spring Boot + MySQL](https://github.com/ndourbamba18/SpringBoot-Microservices)
 
 ## Dependency
 – If you want to use PostgreSQL:
