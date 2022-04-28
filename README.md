@@ -51,7 +51,6 @@ More Practice:
     ```
 - Faker for github
 ```
-		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
@@ -60,7 +59,6 @@ More Practice:
     ```
 - mindrot
 ```
-   <!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
    <dependency>
 	<groupId>org.mindrot</groupId>
 	<artifactId>jbcrypt</artifactId>
