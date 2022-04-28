@@ -1,77 +1,28 @@
-# Spring Boot JWT Authentication example with Spring Security & Spring Data JPA
+# E-Commerce Backend App Api Rest using Spring Boot & JWT Authentication with Spring Security & Spring Data JPA & Contact Form
 
-## User Registration, User Login and Authorization process.
-The diagram shows flow of how we implement User Registration, User Login and Authorization process.
+## Backend Authentication
 
-![spring-boot-jwt-authentication-spring-security-flow](spring-boot-jwt-authentication-spring-security-flow.png)
+> [Spring Boot + JWT Authentication](https://bezkoder.com/spring-boot-vue-js-authentication-jwt-spring-security/)
 
-## Spring Boot Server Architecture with Spring Security
-You can have an overview of our Spring Boot Server with the diagram below:
+## Backend CRUD App
 
-![spring-boot-jwt-authentication-spring-security-architecture](spring-boot-jwt-authentication-spring-security-architecture.png)
+> [Spring Boot + MySQL/PostgreSQL example](https://bezkoder.com/spring-boot-vue-js-crud-example/)
 
-For more detail, please visit:
-> [Secure Spring Boot App with Spring Security & JWT Authentication](https://bezkoder.com/spring-boot-jwt-authentication/)
+> [Spring Boot + MySQL example](https://bezkoder.com/angular-spring-boot-crud/)
 
-> [For MongoDB](https://bezkoder.com/spring-boot-jwt-auth-mongodb/)
+> [Spring Boot + PostgreSQL example](https://bezkoder.com/angular-spring-boot-postgresql/)
 
-## Refresh Token
+> [Spring Boot + MySQL example](https://bezkoder.com/angular-10-spring-boot-crud/)
 
-![spring-boot-refresh-token-jwt-example-flow](spring-boot-refresh-token-jwt-example-flow.png)
+## Microservices:
+> [Spring Boot + MySQL + Rest Client](https://bezkoder.com/integrate-angular-spring-boot/)
+ 
+> [Spring Boot + MySQL + Open Feign](https://bezkoder.com/integrate-angular-spring-boot/)
 
-For instruction: [Spring Boot Refresh Token with JWT example](https://bezkoder.com/spring-boot-refresh-token-jwt/)
-
-## Fullstack Authentication
-
-> [Spring Boot + Vue.js JWT Authentication](https://bezkoder.com/spring-boot-vue-js-authentication-jwt-spring-security/)
-
-> [Spring Boot + Angular 8 JWT Authentication](https://bezkoder.com/angular-spring-boot-jwt-auth/)
-
-> [Spring Boot + Angular 10 JWT Authentication](https://bezkoder.com/angular-10-spring-boot-jwt-auth/)
-
-> [Spring Boot + Angular 11 JWT Authentication](https://bezkoder.com/angular-11-spring-boot-jwt-auth/)
-
-> [Spring Boot + React JWT Authentication](https://bezkoder.com/spring-boot-react-jwt-auth/)
-
-## Fullstack CRUD App
-
-> [Vue.js + Spring Boot + MySQL/PostgreSQL example](https://bezkoder.com/spring-boot-vue-js-crud-example/)
-
-> [Angular 8 + Spring Boot + MySQL example](https://bezkoder.com/angular-spring-boot-crud/)
-
-> [Angular 8 + Spring Boot + PostgreSQL example](https://bezkoder.com/angular-spring-boot-postgresql/)
-
-> [Angular 10 + Spring Boot + MySQL example](https://bezkoder.com/angular-10-spring-boot-crud/)
-
-> [Angular 10 + Spring Boot + PostgreSQL example](https://bezkoder.com/angular-10-spring-boot-postgresql/)
-
-> [Angular 11 + Spring Boot + MySQL example](https://bezkoder.com/angular-11-spring-boot-crud/)
-
-> [Angular 11 + Spring Boot + PostgreSQL example](https://bezkoder.com/angular-11-spring-boot-postgresql/)
-
-> [React + Spring Boot + MySQL example](https://bezkoder.com/react-spring-boot-crud/)
-
-> [React + Spring Boot + PostgreSQL example](https://bezkoder.com/spring-boot-react-postgresql/)
-
-> [React + Spring Boot + MongoDB example](https://bezkoder.com/react-spring-boot-mongodb/)
-
-Run both Back-end & Front-end in one place:
-> [Integrate Angular with Spring Boot Rest API](https://bezkoder.com/integrate-angular-spring-boot/)
-
-> [Integrate React.js with Spring Boot Rest API](https://bezkoder.com/integrate-reactjs-spring-boot/)
-
-> [Integrate Vue.js with Spring Boot Rest API](https://bezkoder.com/integrate-vue-spring-boot/)
+> [Spring Boot + MySQL + Rest Client](https://bezkoder.com/integrate-angular-spring-boot/)
 
 More Practice:
 > [Spring Boot File upload example with Multipart File](https://bezkoder.com/spring-boot-file-upload/)
-
-> [Exception handling: @RestControllerAdvice example in Spring Boot](https://bezkoder.com/spring-boot-restcontrolleradvice/)
-
-> [Spring Boot Repository Unit Test with @DataJpaTest](https://bezkoder.com/spring-boot-unit-test-jpa-repo-datajpatest/)
-
-> [Deploy Spring Boot App on AWS – Elastic Beanstalk](https://bezkoder.com/deploy-spring-boot-aws-eb/)
-
-> [Secure Spring Boot App with Spring Security & JWT Authentication](https://bezkoder.com/spring-boot-jwt-authentication/)
 
 ## Dependency
 – If you want to use PostgreSQL:
@@ -90,13 +41,39 @@ More Practice:
   <scope>runtime</scope>
 </dependency>
 ```
+- JWT
+```
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+    ```
+- Faker for github
+```
+		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+    ```
+- mindrot
+```
+		<!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
+		<dependency>
+			<groupId>org.mindrot</groupId>
+			<artifactId>jbcrypt</artifactId>
+			<version>0.3m</version>
+		</dependency>
+    ```
 ## Configure Spring Datasource, JPA, App properties
 Open `src/main/resources/application.properties`
 - For PostgreSQL:
 ```
-spring.datasource.url= jdbc:postgresql://localhost:5432/testdb
+spring.datasource.url= jdbc:postgresql://localhost:5432/ecommercedb
 spring.datasource.username= postgres
-spring.datasource.password= 123
+spring.datasource.password= your password
 
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation= true
 spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
@@ -104,22 +81,62 @@ spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
 # Hibernate ddl auto (create, create-drop, validate, update)
 spring.jpa.hibernate.ddl-auto= update
 
+spring.jackson.serialization.fail-on-empty-beans=false
+spring.main.allow-circular-references=true
+
+## Configuration
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+
+### Configure gmail specific username and password
+spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
+spring.mail.password='Your password (example : hello@2021)'
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.connectiontimeout=5000
+spring.mail.properties.mail.smtp.timeout=5000
+spring.mail.properties.mail.smtp.writetimeout=5000
+
 # App Properties
-bezkoder.app.jwtSecret= bezKoderSecretKey
-bezkoder.app.jwtExpirationMs= 86400000
+jwt.secret=secret
 ```
 - For MySQL
 ```
-spring.datasource.url= jdbc:mysql://localhost:3306/testdb?useSSL=false
-spring.datasource.username= root
-spring.datasource.password= 123456
+#Server Configuration
+server.port=8080
+jwt.secret=secret
 
-spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDialect
-spring.jpa.hibernate.ddl-auto= update
+#spring.profile=dev
+spring.datasource.url = jdbc:mysql://localhost:3306/ecommercedb?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
+spring.datasource.username = username
+spring.datasource.password = your Password
+spring.datasource.platform=mysql
+spring.datasource.initialization-mode=always
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+spring.jpa.hibernate.ddl-auto = update
+spring.jackson.serialization.fail-on-empty-beans=false
+spring.main.allow-circular-references=true
 
-# App Properties
-bezkoder.app.jwtSecret= bezKoderSecretKey
-bezkoder.app.jwtExpirationMs= 86400000
+## Configuration
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+
+### Configure gmail specific username and password
+spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
+spring.mail.password='Your password (example : hello@2021)'
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+spring.mail.properties.mail.smtp.starttls.required=true
+spring.mail.properties.mail.smtp.connectiontimeout=5000
+spring.mail.properties.mail.smtp.timeout=5000
+spring.mail.properties.mail.smtp.writetimeout=5000
+
+```
+
+## Download All Package :
+```
+mvn package
 ```
 ## Run Spring Boot application
 ```
