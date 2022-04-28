@@ -60,12 +60,12 @@ More Practice:
     ```
 - mindrot
 ```
-		<!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
-		<dependency>
-			<groupId>org.mindrot</groupId>
-			<artifactId>jbcrypt</artifactId>
-			<version>0.3m</version>
-		</dependency>
+   <!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
+   <dependency>
+	<groupId>org.mindrot</groupId>
+	<artifactId>jbcrypt</artifactId>
+	<version>0.3m</version>
+ </dependency>
     ```
 ## Configure Spring Datasource, JPA, App properties
 Open `src/main/resources/application.properties`
@@ -79,8 +79,7 @@ spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto= update
 spring.jackson.serialization.fail-on-empty-beans=false
 spring.main.allow-circular-references=true
-```
-```
+
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
@@ -106,8 +105,7 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto = update
 spring.jackson.serialization.fail-on-empty-beans=false
 spring.main.allow-circular-references=true
-```
-```
+
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
@@ -118,7 +116,6 @@ spring.mail.properties.mail.smtp.starttls.required=true
 spring.mail.properties.mail.smtp.connectiontimeout=5000
 spring.mail.properties.mail.smtp.timeout=5000
 spring.mail.properties.mail.smtp.writetimeout=5000
-
 ```
 
 ## Download All Package :
