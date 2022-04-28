@@ -40,32 +40,31 @@ More Practice:
   <artifactId>mysql-connector-java</artifactId>
   <scope>runtime</scope>
 </dependency>
-```
+
 - JWT
-```
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
 			<version>0.9.1</version>
 		</dependency>
-    ```
+   
 - Faker for github
-```
+
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
 			<artifactId>javafaker</artifactId>
 			<version>1.0.1</version>
 		</dependency>
-    ```
+    
 - mindrot
-```
+
    <dependency>
 	<groupId>org.mindrot</groupId>
 	<artifactId>jbcrypt</artifactId>
 	<version>0.3m</version>
  </dependency>
-   
-## Configure Spring Datasource, JPA, App properties
+ ```  
+### Configure Spring Datasource, JPA, App properties
 Open `src/main/resources/application.properties`
 - For PostgreSQL:
 ```
