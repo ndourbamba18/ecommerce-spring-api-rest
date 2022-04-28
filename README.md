@@ -79,7 +79,8 @@ spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto= update
 spring.jackson.serialization.fail-on-empty-beans=false
 spring.main.allow-circular-references=true
-
+```
+```
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
@@ -105,7 +106,8 @@ spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto = update
 spring.jackson.serialization.fail-on-empty-beans=false
 spring.main.allow-circular-references=true
-
+```
+```
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
