@@ -77,18 +77,14 @@ spring.datasource.password= your password
 
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation= true
 spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.PostgreSQLDialect
-
-# Hibernate ddl auto (create, create-drop, validate, update)
 spring.jpa.hibernate.ddl-auto= update
 
 spring.jackson.serialization.fail-on-empty-beans=false
 spring.main.allow-circular-references=true
 
-## Configuration
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 
-### Configure gmail specific username and password
 spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
 spring.mail.password='Your password (example : hello@2021)'
 spring.mail.properties.mail.smtp.auth=true
@@ -98,16 +94,13 @@ spring.mail.properties.mail.smtp.connectiontimeout=5000
 spring.mail.properties.mail.smtp.timeout=5000
 spring.mail.properties.mail.smtp.writetimeout=5000
 
-# App Properties
 jwt.secret=secret
 ```
 - For MySQL
 ```
-#Server Configuration
 server.port=8080
 jwt.secret=secret
 
-#spring.profile=dev
 spring.datasource.url = jdbc:mysql://localhost:3306/ecommercedb?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&useSSL=false
 spring.datasource.username = username
 spring.datasource.password = your Password
@@ -118,11 +111,9 @@ spring.jpa.hibernate.ddl-auto = update
 spring.jackson.serialization.fail-on-empty-beans=false
 spring.main.allow-circular-references=true
 
-## Configuration
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 
-### Configure gmail specific username and password
 spring.mail.username='Your email_address (example : ndourcodeur@gmail.com)'
 spring.mail.password='Your password (example : hello@2021)'
 spring.mail.properties.mail.smtp.auth=true
