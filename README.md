@@ -64,7 +64,7 @@ More Practice:
 	<artifactId>jbcrypt</artifactId>
 	<version>0.3m</version>
  </dependency>
-    ```
+   
 ## Configure Spring Datasource, JPA, App properties
 Open `src/main/resources/application.properties`
 - For PostgreSQL:
