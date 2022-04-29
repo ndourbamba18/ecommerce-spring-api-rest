@@ -132,6 +132,6 @@ mvn spring-boot:run
 
 > [commandLineRunner](https://github.com/ndourbamba18/ecommerce-spring-api-rest/tree/commandLineRunner)
 
-> [docker-compose](https://github.com/ndourbamba18/customer-app)
+> [docker-compose](https://github.com/ndourbamba18/ecommerce-spring-api-rest/tree/docker-compose)
 
 
