@@ -1,4 +1,4 @@
-# E-Commerce Backend App Api Rest using Spring Boot & JWT Authentication with Spring Security & Spring Data JPA & Contact Form
+# E-Commerce Api Rest using Spring Boot & JWT Authentication with Spring Security & Spring Data JPA & Contact Form
 
 ## Backend Authentication
 
@@ -6,13 +6,13 @@
 
 ## Backend CRUD App
 
-> [Spring Boot + MySQL](https://github.com/ndourbamba18/company-service)
+> [Spring Boot + MySQL Example Company Service App](https://github.com/ndourbamba18/company-service)
 
-> [Spring Boot + Spring MVC + MySQL ](https://github.com/ndourbamba18/spring-boot-mvc-employee-manager)
+> [Spring Boot + Spring MVC + MySQL Example Employee Manager App ](https://github.com/ndourbamba18/spring-boot-mvc-employee-manager)
 
-> [Spring Boot + Java Mail Sender](https://github.com/ndourbamba18/contact-form)
+> [Spring Boot + Java Mail Sender Example Contact Form](https://github.com/ndourbamba18/contact-form)
 
-> [Spring Boot + MySQL](https://github.com/ndourbamba18/training-rest-api)
+> [Spring Boot + MySQL Example Training App](https://github.com/ndourbamba18/training-rest-api)
 
 ## Microservices:
 > [Spring Boot + MySQL + Rest Template](https://github.com/ndourbamba18/Microservices)
@@ -22,7 +22,11 @@
 > [Spring Boot + MySQL + Rest Template](https://github.com/ndourbamba18/spring-boot-rest-template)
 
 More Practice:
-> [Spring Boot + MySQL](https://github.com/ndourbamba18/SpringBoot-Microservices)
+> [Spring Boot + MySQL Example Microservice](https://github.com/ndourbamba18/SpringBoot-Microservices)
+
+>  [Django + SQlite3 Example Login and Registration User](https://github.com/ndourbamba18/login-registration-app)
+
+> [Spring Boot + MySQL Example Customer App](https://github.com/ndourbamba18/customer-app)
 
 ## Dependency
 – If you want to use PostgreSQL:
@@ -123,3 +127,11 @@ mvn package
 ```
 mvn spring-boot:run
 ```
+
+## An others Branches
+
+> [commandLineRunner](https://github.com/ndourbamba18/customer-app)
+
+> [docker-compose](https://github.com/ndourbamba18/customer-app)
+
+
